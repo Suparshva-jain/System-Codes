@@ -1,0 +1,32 @@
+body{
+
+    background-color: darkred;
+}
+
+#op{
+    color: rgb(44, 44, 6);
+    font-size: 300%;
+    text-align: center;
+    border: 2px burlywood solid;
+    background-color: rgb(149, 215, 36);
+    border-radius: 200px;
+}
+
+
+
+#np{
+    font-size: 50px;
+    color: rgb(255, 255, 157);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    border: 2px white solid;
+    border-radius: 200px;
+    text-align: center;
+}
+
+#jp{
+    border: 35px black double;
+    background-color: darkslateblue;
+}
+
+

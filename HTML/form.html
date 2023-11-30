@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+        <meta charset="UTF-16">
+        <title>Form</title>
+
+        <style>
+            #a1{
+                text-align: center;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+
+        <!--
+            <action> -- send form data to a given location
+            <method> -- type of data || GET - insenstive || POST - sensetive
+                
+        -->
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+
+            <!-- -------------------- text ---------------- -->
+            <div id="a1">
+            <label for="Username">Username:</label>
+            <input size="30" type="text" id="Username" placeholder="First Name" minlength="5" maxlength="20" required> 
+            </div>
+            <br><br>
+
+
+            <!-- -------------------- password -------------- -->
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" required>
+            <br><br>
+
+
+            <!-- -------------------- mail id --------------- -->
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" placeholder="@mail.com" required>
+            <br><br>     
+            
+
+            <!-- -------------------- Phone number ---------------- -->
+            <label for="tele">Phone:</label>
+            <input type="tel" id="tele" placeholder="01234-56789" pattern="[0-9]{5}-[0-9]{5}" required>
+            <label style="font-size: 20px; background-color: black; color: rgb(252, 252, 192);">[ Submit the phone number in the given format only ]</label>
+            <br><br>
+
+            <!-- -------------------- DOB ---------------- -->
+            <label for="dob">Date-Of-Birth:</label>
+            <input id="dob" type="date" placeholder="11/11/1111" required>
+            <br><br>
+
+
+            <!-- -------------------- Quantity ---------------- -->
+            <label for="quant">Quantity:</label>
+            <input id="quant" type="number" placeholder="0-100 only" max="100" required>
+            <br><br>
+
+
+            <!-- -------------------- Radio Button---------------- -->
+            <label for="title">Pre-Title --- </label>
+
+            <label for="Mr.">Mr.</label>
+            <input id="Mr." type="radio" name="title">
+            <label for="Msr.">Ms.</label>
+            <input id="Ms." type="radio" name="title">
+            <label for="phD.">phD.</label>
+            <input id="phD." type="radio" name="title">          
+            <br><br>
+
+
+            <!-- -------------------- select option ---------------- -->
+            <label for="payment">Pay-Method:</label>
+            <select id="payment">
+                <option >Visa</option>
+                <option>Mastercard</option>
+                <option>COD</option>
+                <option>Net-Banking</option>
+            </select>
+            <br><br>
+
+
+            <!-- -------------------- Checkbox ---------------- -->
+            <label for="check">Agreed with Terms and Condition (*)</label>
+            <input id="check" type="checkbox" required>
+            <br><br>
+
+
+            <!-- -------------------- file choose ---------------- -->
+            <label for="file">Provide your Identification ---- </label>
+            <input id="file" type="file" required accept="image/png, image/jpeg">
+            <br><br>
+
+
+            <!-- ----------- Comment section ---------------->
+            <label for="comment">Your Review Please </label>
+            <textarea id="comment" rows="2s" cols="25"></textarea>
+            <br><br>
+
+
+
+            <input type="submit">
+            <input type="reset">
+
+
+        </form>
+
+    </body>
+
+</html>
